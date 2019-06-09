@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+    li {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
+    .get {
+      color: green;
+      font-weight: bold;
+    }
+
+    .post {
+      color: orange;
+      font-weight: bold;
+    }
+
+    .put {
+      color: blue;
+      font-weight: bold;
+    }
+
+    .delete {
+      color: red;
+      font-weight: bold;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Moleculer Routing Examples</h1>
+
+    <p>
+      Routing examples from Moleculer Web Examples repository: <br>
+      <a href="https://github.com/moleculerjs/moleculer-web/tree/master/examples">https://github.com/moleculerjs/moleculer-web/tree/master/examples</a>
+    </p>
+
+    <ol>
+        <li><h2>Default Route Settings</h2></li>
+
+        <ul>
+          <li>Access to all services through the <b>'/simple'</b>route.</li>
+          <li>Uses API Gateway service with default settings.</li>
+          <li>Access greeter.*, math.* & internal $node.* actions.</li>
+
+          <h4>Examples:</h4>
+          
+          <ul>
+            <li>
+              Greeter Moleculer <br>
+              <code class="get">GET</code> <a href="/simple/v1/greeter/hello"><code>/simple/v1/greeter/hello</code></a>
+            </li>
+            <li>
+                Add two numbers <br>
+                <code class="get">GET</code> <a href="/simple/math/add?a=25&b=13"><code>/simple/math/add?a=25&b=13</code></a>
+            </li>
+            <li>
+                Get health info <br>
+                <code class="get">GET</code> <a href="/simple/~node/health"><code>/simple/~node/health</code></a>
+            </li>
+            <li>
+                List of actions <br>
+                <code class="get">GET</code> <a href="/simple/~node/actions"><code>/simple/~node/actions</code></a>
+            </li>
+          </ul>
+        </ul>
+
+        <p>Official Documentation: <br><a href="https://moleculer.services/docs/0.13/moleculer-web.html#Aliases">https://moleculer.services/docs/0.13/moleculer-web.html#Aliases</a></p>
+
+        <li><h2>Auto-aliases generator</h2></li>
+
+        <ul>
+          <li>Access to all services through the <b>'/autoalias'</b> route.</li>
+          <li>Uses API Gateway service auto-aliases generator feature</li>
+          <li>You don't need to create aliases for your actions.</li>
+          <li>It collects & read from action definitions & build aliases.</li>
+
+          <h4>Examples:</h4>
+          
+          <ul>
+            <li>
+              Get all users <br>
+              <code class="get">GET</code> <a href="/autoalias/users"><code>/autoalias/users</code></a>
+            </li>
+            <li>
+                Create a new user <br>
+                <code class="post">POST</code> <a href="/autoalias/users"><code>/autoalias/users</code></a> <br>
+              <code>
+                Body
+                {
+                  "name": "Razvan Predescu"
+                }
+              </code>
+            </li>
+            <li>
+                Get an user by ID <br>
+                <code class="get">GET</code> <a href="/autoalias/users/11"><code>/autoalias/users/11</code></a>
+            </li>
+            <li>
+                Update an user by ID <br>
+                <code class="put">PUT</code> <a href="/autoalias/users/11"><code>/autoalias/users/11</code></a><br>
+                <code>
+                    Body
+                    {
+                      "name": "Updated User Name"
+                    }
+                  </code>
+            </li>
+            <li>
+                Remove an user by ID <br>
+                <code class="delete">DELETE</code> <a href="/autoalias/users/11"><code>/autoalias/users/11</code></a>
+            </li>
+          </ul>
+        </ul>
+
+        <p>Official Documentation: <br><a href="https://moleculer.services/docs/0.13/moleculer-web.html#Aliases">https://moleculer.services/docs/0.13/moleculer-web.html#Aliases</a></p>
+
+        <li><h2>REST aliases</h2></li>
+
+        <ul>
+          <li>This route uses API Gateway as a RESTful API server</li>
+          <li>Access 'articles' service through the <b>'/rest'</b> route.</li>
+
+          <h4>Examples:</h4>
+          
+          <ul>
+            <li>
+              Get all articles <br>
+              <code class="get">GET</code> <a href="/rest/articles"><code>/rest/articles</code></a>
+            </li>
+            <li>
+              Create a new article <br>
+              <code class="post">POST</code> <a href="/rest/articles"><code>/rest/articles</code></a> <br>
+              <code>
+                Body
+                {
+                  "title": "New article via REST"
+                }
+              </code>
+            </li>
+            <li>
+                Get an article by ID <br>
+                <code class="get">GET</code> <a href="/rest/articles/11"><code>/rest/articles/11</code></a>
+            </li>
+            <li>
+                Update an article by ID <br>
+                <code class="put">PUT</code> <a href="/rest/articles/11"><code>/rest/articles/11</code></a><br>
+                <code>
+                    Body
+                    {
+                      "title": "Modified article title"
+                    }
+                  </code>
+            </li>
+            <li>
+                Remove an article by ID  <br>
+                <code class="delete">DELETE</code> <a href="/rest/articles/11"><code>/rest/articles/11</code></a>
+            </li>
+          </ul>
+        </ul>
+
+        <li><h2>Shorthand RESTful aliases</h2></li>
+
+        <ul>
+          <li>Shorthand RESTful aliases</li>
+          <li>Access 'articles' service through the <b>'/shortrest'</b> route.</li>
+          <li> Disable direct URLs (`/articles/list` or `/articles.list`)</li>
+         
+          <h4>Examples:</h4>
+          
+          <ul>
+            <li>
+              Get all articles <br>
+              <code class="get">GET</code> <a href="/shortrest/articles"><code>/shortrest/articles</code></a>
+            </li>
+            <li>
+              Create a new article <br>
+              <code class="post">POST</code> <a href="/shortrest/articles"><code>/shortrest/articles</code></a> <br>
+              <code>
+                Body
+                {
+                  "title": "New article via REST"
+                }
+              </code>
+            </li>
+            <li>
+                Get an article by ID <br>
+                <code class="get">GET</code> <a href="/shortrest/articles/11"><code>/shortrest/articles/11</code></a>
+            </li>
+            <li>
+                Update an article by ID <br>
+                <code class="put">PUT</code> <a href="/shortrest/articles/11"><code>/shortrest/articles/11</code></a><br>
+                <code>
+                    Body
+                    {
+                      "title": "Modified article title"
+                    }
+                  </code>
+            </li>
+            <li>
+                Remove an article by ID  <br>
+                <code class="delete">DELETE</code> <a href="/shortrest/articles/11"><code>/shortrest/articles/11</code></a>
+            </li>
+          </ul>
+        </ul>
+
+        <p>Official Documentation: <br><a href="https://moleculer.services/docs/0.13/moleculer-web.html#Aliases">https://moleculer.services/docs/0.13/moleculer-web.html#Aliases</a></p>
+
+        <li><h2>Route Whitelisting</h2></li>
+        <ul>
+          <li>Access to all services through the <b>'/whitelist'</b>route.</li>
+          <li>Provides access to certain services & actions</li>
+          <li>Services and actions outside the whitelist are not accessible.</li>
+
+          <h4>Examples:</h4>
+          
+          <ul>
+            <li>
+              Greeter Hello <br>
+              <code class="get">GET</code> <a href="/whitelist/v1/greeter/hello"><code>/whitelist/v1/greeter/hello</code></a>
+            </li>
+            <li>
+              Add two numbers <br>
+              <code class="get">GET</code> <a href="/whitelist/math/add?a=25&b=13"><code>/whitelist/math/add?a=25&b=13</code></a>
+            </li>
+          </ul>
+        </ul>
+
+        <p>Official Documentation: <br><a href="https://moleculer.services/docs/0.13/moleculer-web.html#Whitelist">https://moleculer.services/docs/0.13/moleculer-web.html#Whitelist</a></p>
+
+    </ol>
+
+  </body>
+</html>
