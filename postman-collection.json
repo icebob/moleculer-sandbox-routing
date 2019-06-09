@@ -1,4 +1,4 @@
--{
+{
 	"info": {
 		"_postman_id": "93facccc-a800-4054-b4e6-e380c14b460a",
 		"name": "moleculer-rest-example",
@@ -18,10 +18,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/simple/math/add?a=1&b=1",
+					"raw": "https://le6lg.sse.codesandbox.io/simple/math/add?a=1&b=1",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -58,10 +58,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/simple/math/sub?a=1&b=1",
+					"raw": "https://le6lg.sse.codesandbox.io/simple/math/sub?a=1&b=1",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -98,10 +98,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/simple/math/mult?a=2&b=2",
+					"raw": "https://le6lg.sse.codesandbox.io/simple/math/mult?a=2&b=2",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -138,10 +138,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/simple/math/div?a=2&b=2",
+					"raw": "https://le6lg.sse.codesandbox.io/simple/math/div?a=2&b=2",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -178,10 +178,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/autoalias/users",
+					"raw": "https://le6lg.sse.codesandbox.io/autoalias/users",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -207,10 +207,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/autoalias/users/1",
+					"raw": "https://le6lg.sse.codesandbox.io/autoalias/users/1",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -241,10 +241,10 @@
 					"raw": "{\r\n\t\"name\" : \"Razvan Daniel Predescu\"\r\n}"
 				},
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/autoalias/users",
+					"raw": "https://le6lg.sse.codesandbox.io/autoalias/users",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -280,10 +280,10 @@
 					]
 				},
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/autoalias/users/1",
+					"raw": "https://le6lg.sse.codesandbox.io/autoalias/users/1",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -320,10 +320,10 @@
 					]
 				},
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/autoalias/users/1",
+					"raw": "https://le6lg.sse.codesandbox.io/autoalias/users/1",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -350,10 +350,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/shortrest/articles",
+					"raw": "https://le6lg.sse.codesandbox.io/shortrest/articles",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -379,10 +379,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/shortrest/articles/1",
+					"raw": "https://le6lg.sse.codesandbox.io/shortrest/articles/1",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -419,10 +419,10 @@
 					]
 				},
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/shortrest/articles/1",
+					"raw": "https://le6lg.sse.codesandbox.io/shortrest/articles/1",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -453,10 +453,10 @@
 					"raw": "{\r\n\t\"title\" : \"Moleculer introduction\"\r\n}"
 				},
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/shortrest/articles",
+					"raw": "https://le6lg.sse.codesandbox.io/shortrest/articles",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
@@ -486,10 +486,10 @@
 					"raw": "{\r\n\t\"title\" : \"Moleculer introduction\"\r\n}"
 				},
 				"url": {
-					"raw": "https://leyf6.sse.codesandbox.io/shortrest/articles/1",
+					"raw": "https://le6lg.sse.codesandbox.io/shortrest/articles/1",
 					"protocol": "https",
 					"host": [
-						"leyf6",
+						"le6lg",
 						"sse",
 						"codesandbox",
 						"io"
