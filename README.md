@@ -6,7 +6,7 @@ Routing examples from Moleculer Web Examples repository:
 
 ## Default Route Settings
 
-Access to all services through the **'/simple'**route.
+Access to all services through the **'/simple'** route.
 
 Uses API Gateway service with default settings.
 
