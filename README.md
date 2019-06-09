@@ -117,7 +117,7 @@ Official Documentation:
 
 ## Route Whitelisting
 
-Access to all services through the **'/whitelist'**route.
+Access to all services through the **'/whitelist'** route.
 
 Provides access to certain services & actions
 
