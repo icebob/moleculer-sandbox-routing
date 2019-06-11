@@ -1,5 +1,5 @@
 {
-  "name": "moleculer-sandbox-routing",
+  "name": "moleculer-api-routing",
   "version": "1.0.1",
   "description": "Moleculer routing examples",
   "main": "services/greeter.service.js",
